@@ -41,7 +41,6 @@ public class DemoCollection {
 		System.out.println("Current time in Millis : " + Calendar.getInstance().getTimeInMillis());
 		
 		String chuoi = "Hello Java Function";
-		System.out.println(chuoi.charAt(6));
 		System.out.println(chuoi.indexOf("a")); //vi tri xuat hien dau tien cua chu "a"
 		System.out.println(chuoi.lastIndexOf("o")); //vi tri xuat hien cuoi cung cua chu "o"
 		String name = "  Kami ah       ";
@@ -63,8 +62,14 @@ public class DemoCollection {
 			System.out.println(token);
 		}
 		
+		System.out.println("---------String Builder----------");
 		
+		StringBuilder builder = new StringBuilder();
+		builder.append("How to use ");
+		builder.append("\n");
+		builder.append("GitHub");
 		
+		System.out.println(builder.toString());
 	}
 
 }
